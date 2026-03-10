@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curex: Permanent Allergy Relief</title>
+<link rel="dns-prefetch" href="https://cdn.prod.website-files.com">
+<link rel="preload" as="image" href="pic1.webp" fetchpriority="high" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet"></noscript>
+<style>
+  :root {
+    --pink: #FA4A93;
+    --pink-light: #FFF2F7;
+    --pink-mid: #FFD6EB;
+    --green: #2ECC8A;
+    --green-dark: #1A9E68;
+    --sky: #E8F5FF;
+    --sky-dark: #C8E8F8;
+    --yellow: #FFD71E;
+    --yellow-dark: #F0C800;
+    --mint: #D4F5E8;
+    --off-white: #FEF7EC;
+    --ink: #232323;
+    --ink-mid: #4A4A4A;
+    --ink-light: #888888;
+    --white: #ffffff;
+    --border: #EDE8E0;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --radius-pill: 100px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background: var(--off-white);
+    color: var(--ink);
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* ─── ANNOUNCEMENT BAR ─── */
+  .announcement-bar {
+    background: var(--yellow);
+    text-align: center;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+  }
+  .announcement-bar s { color: #999; margin-right: 4px; }
+  .announcement-bar strong { color: var(--pink); font-weight: 700; }
+
+  /* ─── NAV ─── */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo-img {
+    height: 22px;
+    width: auto;
+    display: block;
+  }
+  .footer-logo-img {
+    height: 28px;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .nav-logo {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 28px;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  .nav-phone {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--ink-mid);
+    font-weight: 400;
+  }
+  .nav-phone svg { color: var(--ink-light); }
+  .btn-pink {
+    background: var(--pink);
+    color: var(--white);
+    border: none;
+    padding: 12px 28px;
+    border-radius: var(--radius-pill);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .btn-pink:hover { background: #D4306F; transform: translateY(-1px); }
+
+  .btn-green {
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 14px 34px;
+    border-radius: var(--radius-pill);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .btn-green:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--white);
+    padding: 48px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0;
+    align-items: end;
+    min-height: 560px;
+    overflow: hidden;
+  }
+  .hero-content {
+    padding: 0 40px 56px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(40px, 5.2vw, 68px);
+    line-height: 1.07;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .hero-title em {
+    font-style: normal;
+    color: var(--pink);
+  }
+  .hero-subtitle {
+    font-size: 18px;
+    color: var(--ink-mid);
+    max-width: 440px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .hero-cta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  .badge {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-mid);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .badge-icon {
+    width: 18px;
+    height: 18px;
+    background: var(--pink-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .hero-product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  .hero-image {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: var(--pink-light);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    margin-left: 40px;
+    min-height: 540px;
+    overflow: hidden;
+  }
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    background: linear-gradient(160deg, var(--pink-mid) 0%, var(--pink-light) 100%);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #C8809A;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ─── AS SEEN ON ─── */
+  .as-seen-on {
+    background: linear-gradient(135deg, #1C1C1C 0%, #2A2200 60%, #1C1C1C 100%);
+    padding: 32px 60px;
+    text-align: center;
+  }
+  .as-seen-on-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+  .press-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+  .press-logo {
+    font-size: 14px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .press-divider {
+    width: 32px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 0 auto 20px;
+  }
+  .press-quote {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    max-width: 680px;
+    margin: 0 auto 10px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+  .press-source {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .press-dot {
+    width: 8px; height: 8px;
+    background: var(--yellow);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  /* ─── FEATURE SECTION ─── */
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 60px;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 14px;
+  }
+  .section-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(32px, 3.8vw, 50px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 36px;
+    max-width: 580px;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .feature-image-wrap {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .feature-image-wrap img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: var(--radius-xl);
+    display: block;
+  }
+  .feature-img-placeholder {
+    width: 420px;
+    height: 420px;
+    background: linear-gradient(145deg, var(--sky) 0%, #E8F6FF 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #7AAEC8;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .feature-callout {
+    position: absolute;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 12px 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+  }
+  .callout-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+  .feature-points {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .feature-point {}
+  .feature-point-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 6px;
+  }
+  .feature-point h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .feature-point p {
+    font-size: 15px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    font-weight: 300;
+    max-width: 400px;
+  }
+
+  /* ─── SOCIAL PROOF / REVIEWS ─── */
+  .reviews-section {
+    background: var(--pink-light);
+    padding: 60px 60px;
+    text-align: center;
+  }
+  .reviews-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 56px;
+    line-height: 1.15;
+  }
+  .reviews-carousel {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 32px;
+  }
+  .review-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 24px rgba(240,62,132,0.06);
+    border: 1px solid rgba(240,62,132,0.08);
+  }
+  .review-stars {
+    color: #F7A300;
+    font-size: 14px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .review-text {
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  .review-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .review-avatar {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--pink-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--pink);
+  }
+  /* Trust bar */
+  .reviews-trust-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 18px 28px;
+    box-shadow: 0 4px 24px rgba(240,62,132,0.07);
+    border: 1px solid rgba(240,62,132,0.1);
+    flex-wrap: nowrap;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .trust-badge-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .google-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+  .trust-badge-stars {
+    color: #F7A300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .trust-badge-score {
+    font-size: 13px;
+    color: var(--ink-mid);
+    margin-top: 2px;
+  }
+  .trust-badge-score strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .trust-divider {
+    width: 1px;
+    height: 36px;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+  .trust-stat {
+    text-align: center;
+  }
+  .trust-stat-num {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .trust-stat-label {
+    font-size: 12px;
+    color: var(--ink-light);
+    font-weight: 400;
+    margin-top: 3px;
+  }
+  .reviews-stars-inline {
+    color: #F7A300;
+    letter-spacing: 1px;
+  }
+  .reviews-count { font-weight: 500; }
+
+  /* ─── PRICING ─── */
+  .pricing-section {
+    background: linear-gradient(160deg, var(--sky) 0%, #EAF6FF 100%);
+    padding: 48px 60px;
+  }
+  .pricing-inner {
+    max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .pricing-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: 28px 28px 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+  }
+  .pricing-card-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 16px;
+  }
+  .pricing-amount {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+  .pricing-dollar {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 8px;
+  }
+  .pricing-number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.04em;
+  }
+  .pricing-cents {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 10px;
+  }
+  .pricing-was {
+    font-size: 14px;
+    color: var(--ink-light);
+    text-decoration: line-through;
+    margin-bottom: 4px;
+  }
+  .pricing-note {
+    font-size: 12px;
+    color: var(--ink-light);
+    margin-bottom: 28px;
+  }
+  .pricing-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+  .pricing-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-mid);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .pricing-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--off-white);
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
+  .pricing-row-name {
+    font-size: 14px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .pricing-row-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green-dark);
+  }
+  .pricing-hd {
+    font-size: 12px;
+    color: var(--ink-light);
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pricing-right {}
+  .pricing-mobile-cta {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .pricing-right-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .pricing-right p {
+    font-size: 16px;
+    color: var(--ink-mid);
+    font-weight: 300;
+    line-height: 1.65;
+    margin-bottom: 32px;
+    max-width: 380px;
+  }
+  .pricing-right-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(145deg, var(--mint) 0%, var(--sky) 100%);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #5BA890;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ─── COMPARISON ─── */
+  .comparison-section {
+    padding: 64px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .comparison-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  }
+  .comparison-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .comparison-table thead tr th:first-child { border-radius: var(--radius-lg) 0 0 0; }
+  .comparison-table thead tr th:last-child { border-radius: 0 var(--radius-lg) 0 0; }
+  .comparison-table th {
+    padding: 18px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--white);
+    color: var(--ink-light);
+    text-align: center;
+    border-bottom: 2px solid var(--border);
+  }
+  .comparison-table th:first-child { text-align: left; }
+  .comparison-table th.highlight {
+    background: var(--ink);
+    color: var(--white);
+    letter-spacing: 0.04em;
+  }
+  .comparison-table th.highlight .th-badge {
+    display: inline-block;
+    background: var(--pink);
+    color: white;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 6px;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+  }
+  .comparison-table td {
+    padding: 14px 20px;
+    font-size: 14px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    text-align: center;
+    color: var(--ink-mid);
+  }
+  .comparison-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 13px;
+  }
+  .comparison-table td.highlight {
+    background: #FAFAFA;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .comparison-table tr:hover td { background: var(--off-white); }
+  .comparison-table tr:hover td.highlight { background: #F5F5F5; }
+  .check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px; height: 26px;
+    background: var(--mint);
+    border-radius: 50%;
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .cross {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px; height: 26px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    color: #CCC;
+    font-size: 13px;
+  }
+  .price-tag {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 13px;
+  }
+  .price-tag.good { color: var(--green-dark); }
+  .price-tag.neutral { color: var(--ink-light); font-weight: 500; }
+
+  /* ─── HOW IT WORKS ─── */
+  .how-section {
+    background: var(--white);
+    padding: 56px 60px;
+  }
+  .how-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .how-cards {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0;
+    align-items: start;
+  }
+  .how-card {
+    background: var(--off-white);
+    border-radius: var(--radius-xl);
+    padding: 32px 28px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .how-card-icon {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .how-card-num {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+  .how-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  .how-card p {
+    font-size: 14px;
+    color: var(--ink-mid);
+    line-height: 1.65;
+    font-weight: 400;
+  }
+  .how-card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 24px;
+    color: var(--pink);
+    margin-top: 60px;
+    opacity: 0.4;
+  }
+  .insurance-note {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px 28px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+  .insurance-note p {
+    font-size: 14px;
+    color: var(--ink-mid);
+    font-weight: 400;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  /* ─── ALLERGY TYPES ─── */
+  .allergies-section {
+    padding: 60px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .allergy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 36px;
+  }
+  .allergy-card {
+    border-radius: var(--radius-lg);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    transition: transform 0.2s;
+    cursor: default;
+  }
+  .allergy-card:hover { transform: translateY(-2px); }
+  .allergy-icon { font-size: 26px; line-height: 1; }
+  .allergy-card {
+    border-radius: var(--radius-lg);
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    transition: transform 0.2s;
+    cursor: default;
+  }
+  .allergy-card:hover { transform: translateY(-3px); }
+  .allergy-card:nth-child(1) { background: #FFD84D; color: #2D1F00; }
+  .allergy-card:nth-child(2) { background: #A8DFA0; color: #0F2E0A; }
+  .allergy-card:nth-child(3) { background: #FFB3D4; color: #4A0018; }
+  .allergy-card:nth-child(4) { background: #8DD4F5; color: #002A45; }
+  .allergy-card:nth-child(5) { background: #CDB8F5; color: #28006B; }
+  .allergy-card:nth-child(6) { background: #FFCF80; color: #4A2000; }
+  .allergy-card:nth-child(7) { background: #80DFBA; color: #003D22; }
+  .allergy-card:nth-child(8) { background: #F5E680; color: #2E2A00; }
+  .allergy-icon {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  /* ─── FAQ ─── */
+  .faq-section {
+    background: var(--white);
+    padding: 60px 60px;
+  }
+  .faq-inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  details.faq-item summary { list-style: none; }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    line-height: 1.4;
+  }
+  .faq-question:hover { color: var(--pink); }
+  .faq-chevron {
+    width: 22px; height: 22px;
+    min-width: 22px;
+    border-radius: 50%;
+    background: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: var(--ink-mid);
+    transition: transform 0.25s;
+    flex-shrink: 0;
+  }
+  details[open] .faq-chevron { transform: rotate(180deg); background: var(--pink-light); color: var(--pink); }
+  details[open] .faq-question { color: var(--pink); }
+  .faq-answer {
+    font-size: 15px;
+    color: var(--ink-mid);
+    line-height: 1.75;
+    padding: 0 0 20px 0;
+    font-weight: 400;
+    max-width: 620px;
+  }
+
+  /* ─── FINAL CTA ─── */
+  .final-cta {
+    background: var(--ink);
+    padding: 96px 60px;
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .final-cta h2 em {
+    font-style: normal;
+    color: var(--yellow);
+  }
+  .final-cta p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 40px;
+    font-weight: 300;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65;
+  }
+  .cta-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: #1A1A1A;
+    padding: 48px 60px 36px;
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+  .footer-brand {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 26px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  .footer-contact p {
+    margin-bottom: 4px;
+    color: rgba(255,255,255,0.6);
+  }
+  .footer-contact a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .footer-links a:hover { color: rgba(255,255,255,0.7); }
+  .footer-disclaimer {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    line-height: 1.7;
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    animation: fadeUp 0.6s ease both;
+    animation-play-state: paused;
+  }
+  .reveal-delay-1 { animation-delay: 0.1s; }
+  .reveal-delay-2 { animation-delay: 0.2s; }
+  .reveal-delay-3 { animation-delay: 0.3s; }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; height: 60px; }
+    .nav-phone { display: none; }
+    .announcement-bar { font-size: 13px; padding: 10px 16px; }
+    .hero { grid-template-columns: 1fr; padding-top: 0; min-height: unset; }
+    .hero-image { order: -1; margin-left: 0; border-radius: 0; min-height: 320px; }
+    .hero-product-img { border-radius: 0; }
+    .hero-content { padding: 32px 20px 48px; gap: 18px; }
+    .hero-title { font-size: 36px; }
+    .hero-subtitle { font-size: 16px; }
+    .hero-badges { flex-direction: column; gap: 8px; }
+    .as-seen-on { padding: 24px 20px; }
+    .press-logos { gap: 16px; flex-wrap: nowrap; justify-content: center; }
+    .press-logo { font-size: 12px; }
+    .press-quote { font-size: 16px; }
+    .press-logo-hide { display: none; }
+    .section { padding: 44px 20px; }
+    .section-heading { font-size: 26px; margin-bottom: 24px; }
+    .feature-grid { grid-template-columns: 1fr; gap: 32px; }
+    .feature-image-wrap img, .feature-img-placeholder { width: 100%; height: 300px; }
+    .feature-points { padding-left: 0; gap: 24px; }
+    .feature-callout { display: none; }
+    .reviews-section { padding: 44px 20px; }
+    .reviews-heading { font-size: 26px; margin-bottom: 28px; }
+    .reviews-carousel { flex-direction: column; align-items: center; }
+    .review-card { width: 100%; max-width: 400px; }
+    .reviews-trust-bar {
+      padding: 16px 16px;
+      gap: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 16px;
+      max-width: 100%;
+    }
+    .trust-badge {
+      grid-column: 1 / -1;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 12px;
+    }
+    .trust-badge-inner { justify-content: center; gap: 10px; }
+    .trust-divider { display: none; }
+    .trust-stat {
+      padding: 8px 0;
+      text-align: center;
+    }
+    .trust-stat:nth-child(3) { border-right: 1px solid var(--border); }
+    .trust-stat:nth-child(7) { border-right: 1px solid var(--border); }
+    .trust-stat-num { font-size: 20px; }
+    .trust-stat-label { font-size: 11px; }
+    .pricing-section { padding: 32px 20px; }
+    .pricing-inner { grid-template-columns: 1fr; gap: 0; }
+    .pricing-right { display: none; }
+    .pricing-mobile-cta { display: block; }
+    .pricing-number { font-size: 52px; }
+    .pricing-divider { margin: 16px 0; }
+    .pricing-note { margin-bottom: 16px; }
+    .comparison-section { padding: 44px 20px; }
+    .how-section { padding: 44px 20px; }
+    .how-cards { grid-template-columns: 1fr; gap: 16px; }
+    .how-card-arrow { display: none; }
+    .insurance-note { flex-direction: column; gap: 16px; }
+    .insurance-note .btn-green { width: 100%; text-align: center; }
+    .allergies-section { padding: 44px 20px; }
+    .allergy-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .allergy-card { padding: 20px 14px; font-size: 13px; }
+    .faq-section { padding: 44px 20px; }
+    .faq-question { font-size: 15px; }
+    .final-cta { padding: 56px 20px; }
+    .final-cta h2 { font-size: 30px; }
+    .cta-row { flex-direction: column; align-items: stretch; }
+    .cta-row a { text-align: center; }
+    footer { padding: 40px 20px 28px; }
+    .footer-inner { flex-direction: column; gap: 20px; }
+    .footer-links { gap: 12px; }
+    .press-source { flex-wrap: nowrap; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  🔥 Flash Sale: Get started today for only <s>$49</s>&nbsp;<strong>$4.99</strong>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="https://getcurex.com"><img src="https://cdn.prod.website-files.com/61bbbbd3e287ff6cf9bcbda8/66f64184a30e0919d28c5316_curex-logo.svg" alt="Curex" class="nav-logo-img"></a>
+  <div class="nav-phone">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13 19.79 19.79 0 01.12 4.42 2 2 0 012.1 2.26h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 9.4a16 16 0 006.69 6.69l1.3-1.3a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    (857) 240-1080
+  </div>
+  <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-pink">Take Quiz</a>
+</nav>
+
+<!-- HERO -->
+<div style="background: var(--white); border-bottom: 1px solid var(--border);">
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Permanent<br><em>Allergy Relief</em><br>Starts at Home.</h1>
+      <p class="hero-subtitle">Custom immunotherapy drops delivered to your door. No office visits, no shots — just real, lasting relief.</p>
+      <div class="hero-cta-row">
+        <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-pink" style="align-self: flex-start; padding: 16px 38px; font-size: 16px;">Take the Free Quiz</a>
+        <div class="hero-badges">
+          <div class="badge">
+            <div class="badge-icon">📊</div>
+            #1 Online Allergy & Asthma Clinic
+          </div>
+          <div class="badge">
+            <div class="badge-icon">👥</div>
+            50,000+ users
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image reveal reveal-delay-2">
+      <picture>
+        <source srcset="pic1.webp" type="image/webp">
+        <img src="pic1_opt.jpg" alt="Curex Custom Allergy Immunotherapy Drops" class="hero-product-img" fetchpriority="high" decoding="sync" width="900" height="900">
+      </picture>
+    </div>
+  </div>
+</div>
+
+<!-- AS SEEN ON -->
+<div class="as-seen-on">
+  <p class="press-quote">"Curex is changing the landscape of allergies in 2024"</p>
+  <p class="press-source"><span class="press-dot"></span> USA Today</p>
+  <div class="press-divider"></div>
+  <p class="as-seen-on-label">As Seen On</p>
+  <div class="press-logos">
+    <span class="press-logo">USA Today</span>
+    <span class="press-logo press-logo-hide">Men's Health</span>
+    <span class="press-logo">CBS</span>
+    <span class="press-logo">Forbes</span>
+    <span class="press-logo press-logo-hide">mindbodygreen</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div style="background: var(--off-white);">
+  <div class="section" style="max-width:1000px; padding: 56px 60px;">
+    <p class="section-label reveal">How it works</p>
+    <h2 class="section-heading reveal reveal-delay-1" style="max-width:500px;">Permanently Reduce Allergies in Under 2 Minutes a Day</h2>
+    <div class="feature-grid">
+      <div class="feature-image-wrap reveal">
+        <picture>
+          <source srcset="pic2.webp" type="image/webp">
+          <img src="pic2_opt.jpg" alt="Curex customer happy with her child" loading="lazy" decoding="async" width="840" height="840">
+        </picture>
+        <div class="feature-callout" style="bottom: -18px; left: -24px;">
+          <div class="callout-dot" style="background: var(--pink);"></div>
+          Clinical-grade allergen extracts
+        </div>
+        <div class="feature-callout" style="top: 24px; right: -24px;">
+          <div class="callout-dot" style="background: var(--green);"></div>
+          100% natural ingredients
+        </div>
+      </div>
+      <div class="feature-points">
+        <div class="feature-point reveal reveal-delay-1">
+          <p class="feature-point-tag">Ingredient quality</p>
+          <h3>Clinical-Grade Allergen Extracts</h3>
+          <p>A custom formula made from extracts of things you are allergic to helps desensitize your immune system over time for permanent results.</p>
+        </div>
+        <div class="feature-point reveal reveal-delay-2">
+          <p class="feature-point-tag">Purity</p>
+          <h3>No Fillers, No Artificial Ingredients</h3>
+          <p>That's the beauty of immunotherapy: an effective, well-studied treatment with 100% naturally-sourced ingredients. Just allergen extracts and plant-based glycerin.</p>
+        </div>
+        <div class="feature-point reveal reveal-delay-3">
+          <p class="feature-point-tag">Convenience</p>
+          <h3>Delivered to Your Door Monthly</h3>
+          <p>Skip the doctor's office. Your personalized treatment ships directly to you every month. Treat at home, on your schedule.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <h2 class="reviews-heading reveal">Join over 50,000 Curex users</h2>
+  <div class="reviews-carousel">
+    <div class="review-card reveal">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Curex WORKS! The drops are custom to your specific allergies and are super easy to take. Life-changing."</p>
+      <div class="review-name"><div class="review-avatar">N</div> Nicole</div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"After years of suffering from seasonal allergies, I finally found something that actually addresses the root cause instead of just masking symptoms."</p>
+      <div class="review-name"><div class="review-avatar">M</div> Michael T.</div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The process was so easy. Took the quiz, got prescribed, and my drops arrived in days. Already feeling a difference after a few weeks."</p>
+      <div class="review-name"><div class="review-avatar">S</div> Sarah K.</div>
+    </div>
+  </div>
+  <div class="reviews-trust-bar reveal">
+    <div class="trust-badge">
+      <div class="trust-badge-inner">
+        <svg viewBox="0 0 24 24" class="google-icon" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        <div class="trust-badge-text">
+          <div class="trust-badge-stars">★★★★★</div>
+          <div class="trust-badge-score"><strong>4.6</strong> · 50,000+ patients</div>
+        </div>
+      </div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">50,000+</div>
+      <div class="trust-stat-label">Patients treated</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">4.6</div>
+      <div class="trust-stat-label">Google rating</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">94%</div>
+      <div class="trust-stat-label">Report improvement</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-stat">
+      <div class="trust-stat-num">All 50</div>
+      <div class="trust-stat-label">States covered</div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div class="pricing-section">
+  <div class="pricing-inner">
+    <div class="pricing-card reveal">
+      <p class="pricing-card-label">Get started for only</p>
+      <p class="pricing-was">$49.99</p>
+      <div class="pricing-amount">
+        <span class="pricing-dollar">$</span>
+        <span class="pricing-number">4</span>
+        <span class="pricing-cents">.99</span>
+      </div>
+      <p class="pricing-note">Sign-up fee is refundable if treatment is not prescribed</p>
+      <hr class="pricing-divider">
+      <p class="pricing-label">Once you get prescribed:</p>
+      <div class="pricing-rows">
+        <div class="pricing-row">
+          <span class="pricing-row-name">Treatment Shipments</span>
+          <span class="pricing-row-value">$39/month</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-row-name">Allergy Testing</span>
+          <span class="pricing-row-value">Billed to insurance</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-row-name">Online Doctor Visits</span>
+          <span class="pricing-row-value">Billed to insurance</span>
+        </div>
+      </div>
+      <p class="pricing-hd">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        High deductible plan? No insurance? No problem!
+      </p>
+      <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-green pricing-mobile-cta">Am I eligible?</a>
+    </div>
+    <div class="pricing-right reveal reveal-delay-1">
+      <p class="section-label">Treatment Delivered</p>
+      <h2 class="pricing-right-heading">Relief that's finally affordable</h2>
+      <p>The most convenient way to treat the source of allergies, now even more affordable.</p>
+      <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-green">Am I eligible?</a>
+
+    </div>
+  </div>
+</div>
+
+<!-- COMPARISON -->
+<div class="comparison-section">
+  <p class="section-label reveal">Why Curex</p>
+  <h2 class="section-heading reveal reveal-delay-1">Compare your options</h2>
+  <div class="comparison-wrap reveal reveal-delay-2">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th class="highlight">Curex <span class="th-badge">BEST</span></th>
+        <th>Allergy Meds</th>
+        <th>Allergy Shots</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Permanent long-term relief</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>100% at-home treatment</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>Clinician access included</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="cross">✗</span></td>
+      </tr>
+      <tr>
+        <td>Insurance billed</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>Customized to your allergies</td>
+        <td class="highlight"><span class="check">✓</span></td>
+        <td><span class="cross">✗</span></td>
+        <td><span class="check">✓</span></td>
+      </tr>
+      <tr>
+        <td>Monthly cost</td>
+        <td class="highlight"><span class="price-tag good">$39/mo + copay</span></td>
+        <td><span class="price-tag neutral">$17–$42/mo</span></td>
+        <td><span class="price-tag neutral">$167–$417/mo</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how-section">
+  <div class="how-inner">
+    <p class="section-label reveal" style="text-align:center;">Process</p>
+    <h2 class="section-heading reveal reveal-delay-1" style="text-align:center; margin: 0 auto 40px; max-width:100%;">Get Started in 3 Simple Steps</h2>
+    <div class="how-cards">
+      <div class="how-card reveal">
+        <div class="how-card-icon">📋</div>
+        <div class="how-card-num">Step 1</div>
+        <h3>Take the Free Quiz</h3>
+        <p>Answer a few questions about your allergies in under 3 minutes. No office visit required.</p>
+      </div>
+      <div class="how-card-arrow">→</div>
+      <div class="how-card reveal reveal-delay-1">
+        <div class="how-card-icon">🩺</div>
+        <div class="how-card-num">Step 2</div>
+        <h3>Consult a Clinician Online</h3>
+        <p>Connect with a licensed clinician via video from the comfort of home. Free with insurance.</p>
+      </div>
+      <div class="how-card-arrow">→</div>
+      <div class="how-card reveal reveal-delay-2">
+        <div class="how-card-icon">💧</div>
+        <div class="how-card-num">Step 3</div>
+        <h3>Treat at Home Daily</h3>
+        <p>Your custom drops are delivered to your door. Two minutes under the tongue — that's it.</p>
+      </div>
+    </div>
+    <div class="insurance-note reveal">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="1.5" style="min-width:28px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div>
+        <p><strong style="color: var(--ink); font-weight: 600;">We accept all major insurance providers.</strong><br>Insurance covers clinical consultations. Subscription fee ($59/month, not billed to insurance) covers immunotherapy, shipping &amp; related costs.</p>
+      </div>
+      <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-green" style="white-space: nowrap;">Check Eligibility</a>
+    </div>
+  </div>
+</div>
+
+<!-- ALLERGY TYPES -->
+<div class="allergies-section">
+  <p class="section-label reveal">Coverage</p>
+  <h2 class="section-heading reveal reveal-delay-1" style="margin: 0 auto 0; text-align: center; max-width: 100%;">We Treat All Types of Allergies</h2>
+  <div class="allergy-grid">
+    <div class="allergy-card reveal">
+      <div class="allergy-icon">🌾</div>
+      Food Allergies
+    </div>
+    <div class="allergy-card reveal reveal-delay-1">
+      <div class="allergy-icon">🌿</div>
+      Weed Pollens
+    </div>
+    <div class="allergy-card reveal reveal-delay-2">
+      <div class="allergy-icon">🐱</div>
+      Cat Allergies
+    </div>
+    <div class="allergy-card reveal reveal-delay-3">
+      <div class="allergy-icon">🐶</div>
+      Dog Allergies
+    </div>
+    <div class="allergy-card reveal">
+      <div class="allergy-icon">🔬</div>
+      Dust Mites
+    </div>
+    <div class="allergy-card reveal reveal-delay-1">
+      <div class="allergy-icon">🍄</div>
+      Molds
+    </div>
+    <div class="allergy-card reveal reveal-delay-2">
+      <div class="allergy-icon">🌲</div>
+      Tree Pollens
+    </div>
+    <div class="allergy-card reveal reveal-delay-3">
+      <div class="allergy-icon">🌱</div>
+      Grass Pollens
+    </div>
+  </div>
+</div>
+
+<!-- FAQs -->
+<div class="faq-section">
+  <div class="faq-inner">
+    <p class="section-label reveal">Questions</p>
+    <h2 class="section-heading reveal reveal-delay-1">Frequently Asked Questions</h2>
+    <details class="faq-item">
+      <summary class="faq-question">
+        What is Curex?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Curex is a telehealth platform that connects patients with board-certified allergists who can prescribe personalized sublingual allergy immunotherapy (SLIT) drops. These drops contain the same allergen extracts as traditional allergy shots, but are taken at home under the tongue.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        What conditions do you treat?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Curex provides allergy care plans for allergies, asthma, eczema, and pet allergies. We treat a wide range of environmental allergies including pollen, dust mites, mold, and pet dander.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        Do you treat food allergies?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">We do offer treatment for certain food allergies. Please take our free quiz to find out if your specific food allergy is eligible for treatment through Curex.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        What is the treatment?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Curex providers may prescribe sublingual allergy drops that contain the same ingredients as allergy shots but are more convenient and affordable. You take a few drops under your tongue daily for 2 minutes.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        How long is the treatment?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Most patients see meaningful improvement within 6-12 months, with many continuing for 2-3 years for long-lasting or permanent results.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        Do you accept insurance?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Yes! We accept all major insurance providers. Clinical consultations and allergy testing are billed to insurance. The monthly subscription ($59/month) covers your immunotherapy drops, shipping, and related costs.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        What states do you serve?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Curex is available in all 50 states. Our licensed clinicians can treat patients anywhere in the US.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        Is it FDA approved?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Compounded sublingual immunotherapy medications have not been individually approved by the FDA, though the individual allergen extracts used are FDA-approved. The FDA has not evaluated the safety or efficacy of compounded formulations.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        How much does it cost?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Getting started is only $4.99 (refundable if not prescribed). Once prescribed, treatment shipments are $39/month. Allergy testing and online doctor visits are billed to insurance.</div>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">
+        Do you accept HSA/FSA?
+        <span class="faq-chevron">▾</span>
+      </summary>
+      <div class="faq-answer">Yes, Curex accepts HSA and FSA payments for eligible expenses.</div>
+    </details>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <h2 class="reveal">Get Your <em>Personalized</em><br>Immunotherapy Treatment Today</h2>
+  <p class="reveal reveal-delay-1">Join 50,000+ patients who have found permanent relief from allergies with Curex.</p>
+  <div class="cta-row reveal reveal-delay-2">
+    <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-green" style="padding: 16px 40px; font-size: 16px;">Am I Eligible?</a>
+    <a href="https://getcurex.com/quiz?utm_source=facebook&utm_medium=paid-social&utm_campaign={{campaign.id}}_{{campaign.name}}&utm_term={{adset.id}}_{{adset.name}}&utm_content={{ad.id}}_{{ad.name}}" class="btn-pink" style="padding: 16px 40px; font-size: 16px; background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.2);">Start With a Free Quiz</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <a href="https://getcurex.com"><img src="https://cdn.prod.website-files.com/61bbbbd3e287ff6cf9bcbda8/66f641850d56b153c380c52b_curex-logo-white.svg" alt="Curex" class="footer-logo-img"></a>
+      <p style="color: rgba(255,255,255,0.4); font-size: 13px; max-width: 280px; line-height: 1.65;">Permanent allergy relief delivered to your door.</p>
+    </div>
+    <div class="footer-contact">
+      <p>Call/text us: <a href="tel:8572401080">(857) 240-1080</a></p>
+      <p style="margin-top: 8px; color: rgba(255,255,255,0.45); font-size: 13px;">777 Brickell Ave #500-95053<br>Miami, FL 33131</p>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="https://getcurex.com/legal/privacy-policy">Privacy Policy</a>
+    <a href="https://getcurex.com/legal/terms">Terms of Use</a>
+    <a href="https://getcurex.com/legal/informed-consent">Informed Consent</a>
+    <a href="https://getcurex.com/legal/notice-of-privacy-practices">Notice of Privacy Practices</a>
+  </div>
+  <p class="footer-disclaimer">
+    Curex provides allergy care plans for allergies, asthma, eczema and pet allergies. Curex providers may prescribe sublingual allergy drops that contain the same ingredients as allergy shots but are more convenient & affordable. Curex-affiliated medical practices are independently owned and operated by licensed physicians who provide services using the Curex telehealth platform. Compounded medications have not been approved by the FDA and the FDA has not evaluated their safety or efficacy. © 2026 Curex, Inc. All rights reserved.
+  </p>
+</footer>
+
+<script>
+  // Scroll reveal - only animate elements below the fold
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  // Pause animations on all reveal elements initially, then play when visible
+  document.querySelectorAll('.reveal').forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
+</script>
